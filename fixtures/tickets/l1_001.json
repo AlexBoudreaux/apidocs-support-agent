@@ -1,0 +1,10 @@
+{
+  "id": "l1_001",
+  "tenant": "bank-a",
+  "api_version": "v3",
+  "product_area": "payments",
+  "subject": "Refunds working on new payments but rejected on older ones",
+  "body": "Our ops team processes returns in a weekly sweep and about a third of them started bouncing back this month. Anything charged recently refunds fine. The older ones come back 400 with PAY_4013 and no other detail in the response. Example is pay_3Kd91xR2, request id req_8812fa04. We are on v3 across the board. I checked the amounts and they are well under what we took, and the payments show as captured, so I do not think it is an amount problem. Is there some cutoff on how far back we can go, or did something change on your side recently that we missed?",
+  "created_at": "2026-08-28T09:12:00Z",
+  "level": "L1"
+}

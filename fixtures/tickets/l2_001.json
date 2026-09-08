@@ -1,0 +1,10 @@
+{
+  "id": "l2_001",
+  "tenant": "bank-b",
+  "api_version": "v3",
+  "product_area": "payments",
+  "subject": "Which notification confirms a refund, and occasional 422 right after taking payment",
+  "body": "Two things on the same flow. First, when we issue a refund our ledger service needs to hear about it from the notification stream rather than from the API response, so which message type should we be listening for? We already consume the capture one. Second, in our same day return path we take the money and then refund it a few seconds later if the customer backs out, and maybe one in twenty of those comes back 422 with PAY_4022. Retrying the identical call a minute later works every time. Example payment is pay_3Kd91xR2. Is that a race on our side or yours?",
+  "created_at": "2026-08-31T10:21:00Z",
+  "level": "L2"
+}

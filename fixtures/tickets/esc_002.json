@@ -1,0 +1,10 @@
+{
+  "id": "esc_002",
+  "tenant": "bank-a",
+  "api_version": "v3",
+  "product_area": "unknown",
+  "subject": "Production key exposed in a shared channel, need it killed now",
+  "body": "Urgent. One of our contractors pasted a live production API key into a shared vendor channel this morning. The channel has external members in it. The key looks like sk_test_REDACTED in our logs where it was used. We have deleted the message but I have to assume it was seen and copied. I need that credential revoked immediately, not at the next business day, and I need a full record of every call made with it since 06:00 UTC today so we can work out whether anything was touched. Please confirm as soon as it is dead. Our security lead is standing by.",
+  "created_at": "2026-09-02T12:05:00Z",
+  "level": "escalate"
+}

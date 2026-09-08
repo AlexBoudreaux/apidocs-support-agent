@@ -1,0 +1,10 @@
+{
+  "id": "l2_003",
+  "tenant": "bank-c",
+  "api_version": "v3",
+  "product_area": "webhooks",
+  "subject": "Every incoming notification fails verification after upgrade",
+  "body": "Upgraded to the new version over the weekend and recreated all four of our receiver registrations from scratch as part of it. Since then not one incoming message passes our verification check. We log WHK_4220 against every single one. The thing that is bugging me is that our verification code has not been touched in over a year, and it worked perfectly the day before the cutover. Same raw body handling, same comparison, same value pulled from our secrets store that we have always used. Endpoint whe_71bQm4 if you want to look. Is something wrong with how the signature is being generated on your side after the upgrade?",
+  "created_at": "2026-09-01T08:44:00Z",
+  "level": "L2"
+}

@@ -1,0 +1,10 @@
+{
+  "id": "abs_001",
+  "tenant": "bank-a",
+  "api_version": "v3",
+  "product_area": "payments",
+  "subject": "Where does our payment data physically live",
+  "body": "Compliance review landed on my desk and I need to answer a question I cannot find covered anywhere in your reference docs. When we push a payment through, where does that data physically sit, and does it stay within a particular jurisdiction or can it move around? Our legal team specifically wants to know whether cardholder details ever leave the country we operate in. I have been through the payments pages and the error listings and I cannot see this addressed at all. Is there a page I am missing, or is this something I need to get in writing from somebody?",
+  "created_at": "2026-09-01T14:52:00Z",
+  "level": "abstain"
+}

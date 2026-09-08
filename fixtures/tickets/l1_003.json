@@ -1,0 +1,10 @@
+{
+  "id": "l1_003",
+  "tenant": "bank-c",
+  "api_version": "v3",
+  "product_area": "webhooks",
+  "subject": "Need one missed notification re-sent to a single endpoint only",
+  "body": "Our fraud service was offline for roughly 20 minutes yesterday during a deploy and it missed a notification in that window. Everything before and after came through fine. We have three receivers registered and the other two got that same notification without any problem. I want you to push that one message to the fraud service again and only to that one. What I do not want is the other two receivers getting a second copy, because our reconciliation job is not tolerant of that and will double count. Delivery id on the failed one is whd_88fLz2. What is the correct way to do this?",
+  "created_at": "2026-08-29T11:05:00Z",
+  "level": "L1"
+}

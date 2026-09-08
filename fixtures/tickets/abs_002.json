@@ -1,0 +1,10 @@
+{
+  "id": "abs_002",
+  "tenant": "bank-c",
+  "api_version": "v3",
+  "product_area": "webhooks",
+  "subject": "Official library for our stack, and where timing guarantees are published",
+  "body": "Two quick ones before we finalise our design. Do you publish an official library for our language, or is everybody just writing raw HTTP calls against the endpoints? I would rather not hand roll the signature verification if there is something maintained. Second, our architect wants a written statement on how quickly a notification is expected to arrive after the underlying thing happens, and what you commit to on delivery timing generally. I have dug through the webhooks section and the error tables and cannot find either of these documented. Point me at the right page if it exists.",
+  "created_at": "2026-09-02T09:17:00Z",
+  "level": "abstain"
+}

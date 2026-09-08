@@ -1,0 +1,36 @@
+# secrets
+.env
+.env.local
+
+# python
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+*.egg-info/
+
+# os
+.DS_Store
+
+# runtime scratch
+kb/approved/*.md
+!kb/approved/seed-*.md
+
+# private working notes, other take-home material, deck (sent as attachment)
+docs/inputs/
+docs/00-brief.md
+docs/prompts/
+docs/deck-outline.md
+docs/qa-prep.md
+docs/deck.pptx
+excalidraw.log
+docs/.DS_Store
+docs/build-spec.md
+docs/decisions.md
+docs/build-verification.md
+docs/demo-script.md
+docs/research/stack.md
+docs/research/evals.md
+docs/research/production.md
+scripts/build_deck.py

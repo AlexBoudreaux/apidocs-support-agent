@@ -1,0 +1,10 @@
+{
+  "id": "esc_001",
+  "tenant": "bank-b",
+  "api_version": "v3",
+  "product_area": "unknown",
+  "subject": "Formal complaint, we are taking legal advice on this transaction",
+  "body": "This is the fourth time I am raising this and I am done being passed around. A transaction on our account for a significant sum has been disputed for over three weeks and nobody has given me a straight answer. Our legal counsel has now been engaged and we will be pursuing this formally if it is not resolved this week. I am not interested in another documentation link or a suggestion to check an error code. I want a phone call with our account manager today, and I want it in writing who is accountable for this. Reference on our side is CASE-20988. Do not close this ticket.",
+  "created_at": "2026-09-02T11:40:00Z",
+  "level": "escalate"
+}

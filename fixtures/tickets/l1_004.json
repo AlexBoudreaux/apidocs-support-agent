@@ -1,0 +1,10 @@
+{
+  "id": "l1_004",
+  "tenant": "bank-a",
+  "api_version": "v3",
+  "product_area": "payments",
+  "subject": "Sandbox keeps returning 429 while production is completely fine",
+  "body": "Running our integration suite against sandbox and it falls over constantly with 429 responses about half way through. The exact same suite pointed at production never sees a single one. It is not a huge amount of traffic, maybe a few hundred calls over a couple of minutes with some parallelism. My assumption is our sandbox account is broken or has been throttled for some reason, since a test environment being stricter than prod makes no sense to me. Can someone check if there is something wrong with the key? Sample request id is req_44b1c9de.",
+  "created_at": "2026-08-29T15:33:00Z",
+  "level": "L1"
+}

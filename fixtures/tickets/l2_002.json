@@ -1,0 +1,10 @@
+{
+  "id": "l2_002",
+  "tenant": "bank-a",
+  "api_version": "v3",
+  "product_area": "webhooks",
+  "subject": "Backlog of failed notifications after an outage, retrying makes it worse",
+  "body": "We had a bad afternoon. One of our receivers sat behind a load balancer returning 502s for about 90 minutes during a certificate rollout. In that window a few hundred notifications piled up against it. They now show as failed in the delivery listing after several attempts each, and what we captured on the last attempt was WHK_4100. The receiver is healthy again and returns 200 to a manual curl. Where it gets ugly is that when I looped through the failed ones and fired retries back to back, the receiver started timing out again and a chunk of them flipped straight back to failed. So now I am scared to touch it. I need this backlog delivered without knocking the thing over a second time, and I do not want the other two receivers on the account picking up duplicates. Endpoint is whe_71bQm4, one example is whd_88fLz2. What is the sane way to drain this?",
+  "created_at": "2026-08-31T17:58:00Z",
+  "level": "L2"
+}
